@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glogle</title>
+    <link rel="shortcut icon" href="7123025_logo_google_g_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<body>
+    <header>
+        <menu>
+            <ul>
+                <li>Glmail</li>
+                <li>Imagens</li>
+                <li><div class="dot"></div>
+                    <div class="dot"></div> </li>
+                <li>
+                    <button class="entrar">
+                      <span>
+                        <svg
+                          height="24"
+                          width="24"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          </svg>
+                        ENTRAR
+                      </span>
+                    </button>
+                    </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <img src="buscar.png" alt="Google">
+            <form action="search.php" method="get"> <br>
+                <div class="input-container">
+                    <i class="fas fa-search icon"></i>
+                    <input type="text"  name="q" id="q" placeholder= " Pesquisar "  >
+                    <div class="input-microfone"><i class="fas fa-microphone"></i></div>
+                    <div class="input-camera"><i class="fas fa-camera"></i></div>
+                   </div> <br>
+            </form>
+            <div class="button">
+                <button type="submit" onclick="Pesquisar()">Pesquisar</button>
+                <button type="submit">Estou me sentindo sortudo</button>
+            </div>
+            <p>Glogle oferecido em: <a href="">Português (Brasil)</a></p>
+        </section>
+      
+    <script>
+        function Pesquisar() {
+            const query = document.getElementById('q').value;
+            window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            Pesquisar();
+        });
+    </script>
+    <footer> Site Cópia Criado por Fatima Hammoud</footer>
+</body>
+</html>
