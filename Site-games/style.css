@@ -58,6 +58,7 @@ a:hover{
     padding: 5px 10px 20px 5px; /* Espaçamento interno */
     height: 2vh;    
     position: relative; /* Para controle de posição */
+    overflow: hidden; /* Ocultar o conteúdo que ultrapassa o tamanho */
 }
 
 .news-container {
